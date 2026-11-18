@@ -1,0 +1,1054 @@
+{
+ "v": 1,
+ "meta": {
+  "nome": "Hercules · Crux · 2025 (antes)",
+  "robo": "Robô do Time B da SSL (CBR 2025)",
+  "temporada": "2025",
+  "ate": "4",
+  "porte": "",
+  "problema": "Crux é o projeto de treinamento dos novos membros do Programa Hercules nas áreas de eletrônica, mecânica e software; ao final do ano, espera-se que os membros tenham projetado ou fabricado seu primeiro robô."
+ },
+ "fontes": [
+  {
+   "id": "FT-01",
+   "tipo": "Documento da equipe",
+   "titulo": "TDP do Time B para a CBR 2025",
+   "local": "Seções I e III",
+   "ref": "TDP_Warthog_CBR_2025___Crux__SSLB_.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-02",
+   "tipo": "Documento da equipe",
+   "titulo": "Descritivo do projeto 2025 (Escopo e planejamento: Projeto Crux)",
+   "local": "Objetivos; pré-definições; pré-requisitos",
+   "ref": "descritivo_projeto_2025.docx",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-03",
+   "tipo": "Documento da equipe",
+   "titulo": "Esquemático da MainBoard 2025 (v1.0, 25/05/2025)",
+   "local": "",
+   "ref": "sch_main_2025.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-04",
+   "tipo": "Documento da equipe",
+   "titulo": "Esquemático da KickBoard 2025 (v1.0, 25/05/2025)",
+   "local": "",
+   "ref": "sch_kick_2025.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-05",
+   "tipo": "Documento da equipe",
+   "titulo": "Lista de materiais 2025",
+   "local": "",
+   "ref": "BOM_2025.xlsx",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-06",
+   "tipo": "Documento da equipe",
+   "titulo": "Documentação de projeto 2025",
+   "local": "",
+   "ref": "documentacao_crux_2025.docx",
+   "data": "",
+   "ok": true
+  }
+ ],
+ "restr": [
+  {
+   "id": "RS-01",
+   "texto": "Robô construído inteiramente com componentes vendidos no Brasil.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "RS-02",
+   "texto": "Custo do robô o menor possível.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "RS-03",
+   "texto": "Bateria Leão LiPo 5200 mAh 3S 11,1 V 50 C.",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "RS-04",
+   "texto": "Três motores por robô, Microredutor modelo A 12 Vdc 102-S (Microred).",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "RS-05",
+   "texto": "Solenoide de chute Solenóide Miniatura, Série B e C.",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "RS-06",
+   "texto": "Microcontrolador Raspberry Pi Pico.",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "RS-07",
+   "texto": "Rádio NRF24L01.",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "RS-08",
+   "texto": "Um capacitor de chute de 2200 µF e 200 V (EPCOS).",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "RS-09",
+   "texto": "Duas placas: MainBoard (comunicação e motorização) e KickBoard (sistema de chute).",
+   "fonte": "FT-02"
+  }
+ ],
+ "sh": [
+  {
+   "id": "SH-01",
+   "nome": "Membros ingressantes do Programa Hercules",
+   "interesse": "Projetar ou fabricar o primeiro robô e desenvolver conhecimento em eletrônica, mecânica e software.",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "SH-02",
+   "nome": "Time A do Warthog Robotics",
+   "interesse": "Usar as funcionalidades novas do Time B como teste para uma possível implementação no Time A.",
+   "fonte": "FT-01"
+  }
+ ],
+ "vidas": [],
+ "modos": [],
+ "cen": [],
+ "dic": [
+  "adequado",
+  "adequada",
+  "apropriado",
+  "suficiente",
+  "rápido",
+  "rápida",
+  "rapidamente",
+  "fácil",
+  "facilmente",
+  "simples",
+  "robusto",
+  "robusta",
+  "flexível",
+  "eficiente",
+  "otimizado",
+  "melhor",
+  "ótimo",
+  "excelente",
+  "confiável",
+  "amigável",
+  "possível",
+  "quando necessário",
+  "se necessário",
+  "geralmente",
+  "normalmente",
+  "usualmente",
+  "tipicamente",
+  "aproximadamente",
+  "alguns",
+  "vários",
+  "etc",
+  "e/ou"
+ ],
+ "reqs": [
+  {
+   "id": "PR-01",
+   "nivel": "Subsistema",
+   "tipo": "Interface",
+   "texto": "Alimentação da MainBoard: conector mini-fit.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-02",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Tensão de bateria máxima: 16.8 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-03",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Tensão de bateria mínima: 9 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-04",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Regulador de tensão para 5 V. Deve ser capaz de fornecer no mínimo 1,5 A (variável de acordo com escolha de componentes).",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-05",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Alimentação da MainBoard: proteção contra polaridade reversa.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-06",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "LED para Vbat.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-07",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "LED para +5 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-08",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "LED para +3.3 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-09",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "LED para recebimento de pacote de rádio.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-10",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "LED para indicar que o chute está ativo.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-11",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "LED para bateria baixa.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-12",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Driver de corrente para os LEDs. Motivo: Rasp não consegue fornecer corrente para os LEDs.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-13",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "Botão de chute da kick.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-14",
+   "nivel": "Subsistema",
+   "tipo": "Interface",
+   "texto": "Conector micro-fit para motores.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-15",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Ponte H com alimentação compatível com tensão de Vbat.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-16",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "VIH (tensão mínima para o sinal ser considerado nível lógico alto) menor que 3.3 V. Motivo: PWM gerado pela Raspberry Pi Pico tem 3.3 V como nível lógico alto.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-17",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Capacidade de fornecer no mínimo 3 Amperes por motor. Motivo: corrente de parada (stall) do motor Microred 12 V tem que ser menor do que a capacidade de fornecimento de corrente da ponte H.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "T",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-18",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "Seletor de canal do rádio.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-19",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "Seleção de ID: switch de 4 bits (4 pinos) (DIP ou rotativo).",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-20",
+   "nivel": "Subsistema",
+   "tipo": "Interface",
+   "texto": "Conector micro-fit para sensores.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-21",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "Circuito IR.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-22",
+   "nivel": "Subsistema",
+   "tipo": "Funcional",
+   "texto": "AD da bateria.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-23",
+   "nivel": "Subsistema",
+   "tipo": "Interface",
+   "texto": "Alimentação da KickBoard: conector mini-fit.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-24",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Alimentação da KickBoard: proteção contra polaridade reversa.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-25",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "AD do capacitor: divisor resistivo para gerar uma tensão analógica no intervalo de 0 à 3,3 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-26",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Isolador: alimentação Vcc = 3,3 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-27",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Gate driver: Vsupply deve agregar as tensões possíveis da bateria (9 V à 16,8 V).",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-28",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Gate driver: Vlogic e Venable = 3,3 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-29",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Gate driver: Vih << 3,3 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-30",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Gate driver: deve suportar uma frequência de operação entre de 40 kHz e 50 kHz.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-31",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Carregamento do capacitor: pull-down ou pull-up (depende do PMOS ou NMOS) no chaveamento de chute.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-32",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do boost: Vgs(th) < 9 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-33",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do boost: Vgsmáx > 16.8 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-34",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do boost: Vds >= 200 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-35",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do boost: Id > 20 A.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-36",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Indutor do boost na placa (SMD ou PTH).",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-37",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Indutor do boost: corrente máxima >= 3 A.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-38",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Indutor do boost: de 68 uH à 100 uH.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-39",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Diodo do boost: aguentar tensão reversa de 200 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-40",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Diodo do boost: aguentar corrente de no mínimo 3 A.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-41",
+   "nivel": "Subsistema",
+   "tipo": "Interface",
+   "texto": "Disparo do chute: conector mini-fit para o capacitor.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-42",
+   "nivel": "Subsistema",
+   "tipo": "Interface",
+   "texto": "Disparo do chute: conector mini-fit para o solenoide.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-43",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Disparo do chute: dois capacitores eletrolíticos de 6,8 uF e 250 V de Vmax em paralelo com o conector do cap externo.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-44",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "Disparo do chute: diodo de roda livre.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-45",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do disparo: Vgs(th) < 9 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-46",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do disparo: Vgsmáx > 16.8 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-47",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do disparo: Vds >= 200 V.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-48",
+   "nivel": "Subsistema",
+   "tipo": "Elétrico",
+   "texto": "MOSFET do disparo: Id > 20 A.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  },
+  {
+   "id": "PR-49",
+   "nivel": "Subsistema",
+   "tipo": "Segurança",
+   "texto": "Descarregamento do capacitor: resistor de potência SMD ou PTH capaz de dissipar a carga acumulada no capacitor de chute.",
+   "pai": "",
+   "fonte": "FT-02",
+   "cen": "",
+   "metodo": "",
+   "criterio": "",
+   "elem": ""
+  }
+ ],
+ "funcs": [],
+ "elems": [
+  {
+   "id": "EL-01",
+   "nome": "MainBoard",
+   "tipo": "Placa",
+   "descr": "Comunicação, processamento e controle dos motores numa só placa (FT-01)."
+  },
+  {
+   "id": "EL-02",
+   "nome": "KickBoard",
+   "tipo": "Placa",
+   "descr": "Conversor elevador e acionamento do chute (FT-01)."
+  },
+  {
+   "id": "EL-03",
+   "nome": "Bateria LiPo 3S",
+   "tipo": "Energia",
+   "descr": "Leão, 3S, 11,1 V, 5200 mAh, 50 C (FT-02)."
+  },
+  {
+   "id": "EL-04",
+   "nome": "Motores (3 × 102-S)",
+   "tipo": "Atuador",
+   "descr": "Microred, Microredutor A 12 Vdc."
+  },
+  {
+   "id": "EL-05",
+   "nome": "Solenoide de chute",
+   "tipo": "Atuador",
+   "descr": "Soletec, Série B."
+  },
+  {
+   "id": "EL-06",
+   "nome": "Capacitor de chute",
+   "tipo": "Energia",
+   "descr": "2200 µF, 200 V (FT-02)."
+  },
+  {
+   "id": "EL-07",
+   "nome": "Rádio nRF24L01",
+   "tipo": "Comunicação",
+   "descr": "Módulo nRF24L01+ (FT-01)."
+  }
+ ],
+ "aloc": {},
+ "ifs": [
+  {
+   "id": "IF-01",
+   "de": "EL-03",
+   "para": "EL-01",
+   "tipo": "Potência",
+   "descr": "Alimentação da MainBoard por conector mini-fit.",
+   "sinais": "",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "IF-02",
+   "de": "EL-01",
+   "para": "EL-04",
+   "tipo": "Potência",
+   "descr": "Motores ligados por conector micro-fit às pontes H L298N.",
+   "sinais": "",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "IF-03",
+   "de": "EL-01",
+   "para": "EL-02",
+   "tipo": "Sinal",
+   "descr": "Interface entre placas por Micro-Fit 2x3: +3,3 V, GND, PWM de carga e de chute; tensão do capacitor no sentido inverso.",
+   "sinais": "5 sinais e GND",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "IF-04",
+   "de": "EL-03",
+   "para": "EL-02",
+   "tipo": "Potência",
+   "descr": "Alimentação da KickBoard por conector mini-fit.",
+   "sinais": "",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "IF-05",
+   "de": "EL-06",
+   "para": "EL-02",
+   "tipo": "Potência",
+   "descr": "Capacitor externo por conector mini-fit.",
+   "sinais": "",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "IF-06",
+   "de": "EL-02",
+   "para": "EL-05",
+   "tipo": "Potência",
+   "descr": "Solenoide por conector mini-fit, com diodo de roda livre.",
+   "sinais": "",
+   "fonte": "FT-02"
+  },
+  {
+   "id": "IF-07",
+   "de": "EL-07",
+   "para": "EL-01",
+   "tipo": "Sinal",
+   "descr": "Rádio ligado ao RP2040 por SPI.",
+   "sinais": "SPI",
+   "fonte": "FT-01"
+  }
+ ],
+ "decs": [
+  {
+   "id": "DEC-01",
+   "titulo": "Placas de comunicação e de controle de motores: integradas ou separadas?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Placa integrada",
+     "s": []
+    },
+    {
+     "n": "Placas separadas (Time A)",
+     "s": []
+    }
+   ],
+   "escolha": "Placa integrada",
+   "justif": "Placas separadas dão modularidade, mas aumentam custo e espaço; por isso foram integradas.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-02",
+   "titulo": "KickBoard com ou sem microcontrolador próprio?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Sem microcontrolador",
+     "s": []
+    },
+    {
+     "n": "Com microcontrolador (Time A)",
+     "s": []
+    }
+   ],
+   "escolha": "Sem microcontrolador",
+   "justif": "Sem microcontrolador a placa fica mais simples, barata e pequena; os PWMs vêm da MainBoard.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-03",
+   "titulo": "MOSFET do conversor elevador?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "IRFS4127",
+     "s": []
+    },
+    {
+     "n": "IRFP90N20D (Time A)",
+     "s": []
+    }
+   ],
+   "escolha": "IRFS4127",
+   "justif": "IRFS4127 é SMD e mais barato.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-04",
+   "titulo": "Indutor do conversor elevador?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Indutor toroidal PTH de 100 µH",
+     "s": []
+    },
+    {
+     "n": "Indutor feito à mão",
+     "s": []
+    }
+   ],
+   "escolha": "Indutor toroidal PTH de 100 µH",
+   "justif": "Melhor precisão de indutância e menor resistência série.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-05",
+   "titulo": "Isolamento dos sinais da KickBoard?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Isolador digital ADuM1201",
+     "s": []
+    },
+    {
+     "n": "Optoacoplador",
+     "s": []
+    }
+   ],
+   "escolha": "Isolador digital ADuM1201",
+   "justif": "Comunicação rápida, baixo consumo e isolamento superior ao do optoacoplador.",
+   "fonte": "FT-01",
+   "reqs": []
+  }
+ ],
+ "en": {
+  "jogo": "longo",
+  "fases": [
+   {
+    "k": "RUN",
+    "nome": "Running (tempo de jogo)",
+    "medio": "10",
+    "longo": "15",
+    "nat": "regra"
+   },
+   {
+    "k": "HALT",
+    "nome": "Halt",
+    "medio": "10.38",
+    "longo": "15.56",
+    "nat": "painel"
+   },
+   {
+    "k": "STOP",
+    "nome": "Stop",
+    "medio": "8.69",
+    "longo": "13.04",
+    "nat": "painel"
+   },
+   {
+    "k": "BREAK",
+    "nome": "Intervalo",
+    "medio": "5",
+    "longo": "12",
+    "nat": "regra"
+   },
+   {
+    "k": "TIMEOUT",
+    "nome": "Timeout",
+    "medio": "4.07",
+    "longo": "6.11",
+    "nat": "painel"
+   },
+   {
+    "k": "OUT",
+    "nome": "Outros",
+    "medio": "1.43",
+    "longo": "2.14",
+    "nat": "painel"
+   }
+  ],
+  "bat": {
+   "C": "",
+   "Cor": "pendente",
+   "V": "",
+   "Vor": "pendente",
+   "f": "",
+   "for": "pendente",
+   "Rint": "",
+   "Ror": "pendente",
+   "taxaC": "",
+   "Tor": "pendente",
+   "Vmin": "9",
+   "Mor": "dado"
+  },
+  "cargas": [],
+  "pico": [],
+  "cap": {
+   "C": "",
+   "Cor": "pendente",
+   "Vp": "",
+   "Vs": "",
+   "Vl": "200",
+   "Id": "20",
+   "Elim": ""
+  },
+  "massa": {
+   "lim": "",
+   "itens": []
+  },
+  "custo": {
+   "lim": "",
+   "itens": []
+  }
+ },
+ "voltas": [],
+ "vcrm": {},
+ "revs": {},
+ "libs": [],
+ "licoes": [],
+ "snapshot": null
+}

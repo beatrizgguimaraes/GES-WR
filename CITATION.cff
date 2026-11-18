@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se usar esta ferramenta, cite-a como abaixo."
+type: software
+title: "GES-WR: Guia de Engenharia de Sistemas para o Warthog Robotics"
+abstract: >-
+  Ferramenta-guia de engenharia de sistemas, adaptada das normas ISO/IEC/IEEE 15288,
+  29148 e 42010, para projetos de hardware de robôs autônomos do Warthog Robotics.
+version: "1.1"
+authors:
+  - family-names: "Guimarães"
+    given-names: "Beatriz Gonçalves"
+    affiliation: "Escola de Engenharia de São Carlos, Universidade de São Paulo"
+license: MIT
+keywords:
+  - engenharia de sistemas
+  - RoboCup
+  - Small Size League
+  - ISO/IEC/IEEE 15288

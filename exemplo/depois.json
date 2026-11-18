@@ -1,0 +1,1080 @@
+{
+ "v": 1,
+ "meta": {
+  "nome": "Hercules · Crux · 2025 (depois)",
+  "robo": "Robô do Time B da SSL (CBR 2025)",
+  "temporada": "2025",
+  "ate": "4",
+  "porte": "pequeno",
+  "problema": "Robô autônomo de futebol da categoria SSL B, desenvolvido pelo Hercules Program do Warthog Robotics como preparação de novos membros para a SSL. O hardware parte de duas premissas: componentes vendidos no Brasil e menor custo possível."
+ },
+ "fontes": [
+  {
+   "id": "FT-01",
+   "tipo": "Documento da equipe",
+   "titulo": "Description of the 2025 Warthog Robotics SSL B Project (TDP, CBR 2025)",
+   "local": "Bateria LiPo 3S de 11,1 V e 5200 mAh; componentes vendidos no Brasil; menor custo; retomada do Time B em 2024",
+   "ref": "TDP_Warthog_CBR_2025___Crux__SSLB_.pdf",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-03",
+   "tipo": "Regra da liga",
+   "titulo": "SSL Rules 2025 e 2026 (mesmos valores de duração)",
+   "local": "Seções 4.4.1, 4.4.2, 5.1.1 e 5.1.2",
+   "ref": "https://ssl.robocup.org/rules/",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-04",
+   "tipo": "Painel de dados",
+   "titulo": "Painel de métricas RoboCup 2025, Div. B (TIGERs Mannheim)",
+   "local": "Fração do tempo por fase. Agregado da Divisão B; o Time B não participou. Só ordem de grandeza.",
+   "ref": "https://ssl.robocup.org/match-statistics/",
+   "data": "12/11/2026",
+   "ok": false
+  },
+  {
+   "id": "FT-05",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "Catálogo Microred, Microredutor A 12 Vdc, modelo 102-S",
+   "local": "0,7 A na máxima eficiência (8,4 W); 2,8 A de rotor bloqueado; sem corrente a vazio",
+   "ref": "CATALOGO-MODA-12V.pdf",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-06",
+   "tipo": "Comunicação pessoal",
+   "titulo": "Gerente do projeto Lyra, 09/11/2026",
+   "local": "Partida média de 40 min; pior caso de 60 min",
+   "ref": "",
+   "data": "09/11/2026",
+   "ok": false
+  },
+  {
+   "id": "FT-07",
+   "tipo": "Comunicação pessoal",
+   "titulo": "Gerente do projeto Lyra, 11/11/2026",
+   "local": "Bateria geralmente ligada nas pausas; bateria Leão sem datasheet",
+   "ref": "",
+   "data": "11/11/2026",
+   "ok": false
+  },
+  {
+   "id": "FT-08",
+   "tipo": "Documento da equipe",
+   "titulo": "Descritivo do projeto 2025 (Warthog Robotics)",
+   "local": "MOSFET do chute com Id > 20 A; tensão mínima de bateria de 9 V; capacitor de 2200 µF e 200 V",
+   "ref": "descritivo_projeto_2025.docx",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-09",
+   "tipo": "Documento da equipe",
+   "titulo": "Esquemático da KickBoard 2025 (v1.0, 25/05/2025)",
+   "local": "Boost de malha aberta; J2 (capacitor), J3 (solenoide); diodo D2 1N5406; divisor R0/R1 do ADC",
+   "ref": "sch_kick_2025.pdf",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-10",
+   "tipo": "Documento da equipe",
+   "titulo": "Esquemático da MainBoard 2025 (v1.0, 25/05/2025)",
+   "local": "Pontes H L298N (U2 a U4); reguladores L7810 e L7805; divisor da bateria 100 kΩ e 22 kΩ",
+   "ref": "sch_main_2025.pdf",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-11",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "Soletec, Solenóide miniatura Série B, modelo 018",
+   "local": "Não traz resistência nem tensão nominal; só potência por período de ligação",
+   "ref": "solenoide-miniatura-serie-b.pdf",
+   "data": "",
+   "ok": false
+  },
+  {
+   "id": "FT-12",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "STMicroelectronics L298 (DS0218 Rev. 5)",
+   "local": "Tabela 4: Is, Iss, queda total",
+   "ref": "DS_l298.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-13",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "Nordic nRF24L01+ Product Specification v1.0",
+   "local": "Tabela 4: 13,5 mA em recepção a 2 Mbps",
+   "ref": "nRF24L01P_PS_v1.0.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-14",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "Raspberry Pi Pico datasheet",
+   "local": "Seção 3.1, consumo; ADC_VREF",
+   "ref": "pico-datasheet.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-15",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "STMicroelectronics L78 (DS0422 Rev. 38)",
+   "local": "Tabela 10: corrente quiescente do L7805C",
+   "ref": "DS_l78.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-16",
+   "tipo": "Datasheet ou catálogo",
+   "titulo": "Texas Instruments ISO722x (SLLS755U) e UCC27524A (SLUSBP4C)",
+   "local": "5.12 e 5.5",
+   "ref": "slls755u.pdf; ucc27524a.pdf",
+   "data": "",
+   "ok": true
+  },
+  {
+   "id": "FT-17",
+   "tipo": "Documento da equipe",
+   "titulo": "Lista de materiais 2025",
+   "local": "Indutor L0 de 100 µH e 3 A; reguladores L7810CV e L7805CV",
+   "ref": "BOM_2025.xlsx",
+   "data": "",
+   "ok": true
+  }
+ ],
+ "restr": [
+  {
+   "id": "RS-01",
+   "texto": "Hardware com componentes vendidos no Brasil.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "RS-02",
+   "texto": "Menor custo possível.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "RS-03",
+   "texto": "Bateria LiPo 3S de 11,1 V e 5200 mAh.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "RS-04",
+   "texto": "Conformidade com as regras da SSL (a categoria SSL da CBR segue as regras da SSL).",
+   "fonte": "FT-03"
+  },
+  {
+   "id": "RS-05",
+   "texto": "Robô projetado por membros de primeiro e segundo ano do grupo.",
+   "fonte": "FT-01"
+  }
+ ],
+ "sh": [
+  {
+   "id": "SH-01",
+   "nome": "Membros ingressantes do Time B",
+   "interesse": "Desenvolver conhecimento em software, eletrônica e mecânica como preparação para a SSL.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "SH-02",
+   "nome": "Hercules Program e Warthog Robotics",
+   "interesse": "Formar novos membros que possam contribuir depois com a SSL.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "SH-03",
+   "nome": "Organização da liga (SSL e CBR)",
+   "interesse": "Robôs que cumprem as regras da liga.",
+   "fonte": "FT-03"
+  }
+ ],
+ "vidas": [
+  {
+   "id": "LV-01",
+   "nome": "Fabricação"
+  },
+  {
+   "id": "LV-02",
+   "nome": "Transporte"
+  },
+  {
+   "id": "LV-03",
+   "nome": "Preparação para o jogo"
+  },
+  {
+   "id": "LV-04",
+   "nome": "Partida"
+  },
+  {
+   "id": "LV-05",
+   "nome": "Manutenção entre partidas"
+  },
+  {
+   "id": "LV-06",
+   "nome": "Armazenamento"
+  }
+ ],
+ "modos": [
+  {
+   "id": "MD-01",
+   "nome": "Halt",
+   "entrada": "Comando HALT do árbitro.",
+   "saida": "Próximo comando do árbitro."
+  },
+  {
+   "id": "MD-02",
+   "nome": "Stop",
+   "entrada": "Comando STOP do árbitro.",
+   "saida": "Próximo comando do árbitro."
+  },
+  {
+   "id": "MD-03",
+   "nome": "Running",
+   "entrada": "Início ou retomada do jogo comandado pelo árbitro.",
+   "saida": "Comando HALT ou STOP do árbitro."
+  },
+  {
+   "id": "MD-04",
+   "nome": "Espera (bateria ligada, sem jogo)",
+   "entrada": "Bateria ligada.",
+   "saida": "Início do jogo comandado pelo árbitro, ou chave geral desligada."
+  }
+ ],
+ "cen": [
+  {
+   "id": "SC-01",
+   "vida": "LV-04",
+   "modo": "MD-03",
+   "stake": "SH-01",
+   "titulo": "Partida longa com prorrogação",
+   "descr": "Jogo completo mais prorrogação completa: 63,85 min com a bateria ligada durante todo o intervalo. A equipe informou 60 min como pior caso.",
+   "fonte": "FT-03"
+  },
+  {
+   "id": "SC-02",
+   "vida": "LV-04",
+   "modo": "MD-03",
+   "stake": "SH-01",
+   "titulo": "Partida média",
+   "descr": "Dois tempos completos, sem prorrogação, com 40 min estimados pela equipe.",
+   "fonte": "FT-06"
+  },
+  {
+   "id": "SC-03",
+   "vida": "LV-04",
+   "modo": "MD-01",
+   "stake": "SH-03",
+   "titulo": "Pausa Halt",
+   "descr": "Nenhum robô se move. O robô tem 2 s para frear.",
+   "fonte": "FT-03"
+  },
+  {
+   "id": "SC-04",
+   "vida": "LV-04",
+   "modo": "MD-02",
+   "stake": "SH-03",
+   "titulo": "Pausa Stop",
+   "descr": "O robô continua em movimento, com velocidade limitada a 1,5 m/s.",
+   "fonte": "FT-03"
+  },
+  {
+   "id": "SC-05",
+   "vida": "LV-04",
+   "modo": "MD-04",
+   "stake": "SH-01",
+   "titulo": "Intervalo e timeout com a bateria ligada",
+   "descr": "A bateria geralmente fica ligada. O trabalho adota essa situação como pior caso de energia.",
+   "fonte": "FT-07"
+  },
+  {
+   "id": "SC-06",
+   "vida": "LV-01",
+   "modo": "",
+   "stake": "SH-02",
+   "titulo": "Fabricação com componentes do mercado brasileiro",
+   "descr": "Placas e peças compradas no Brasil, com o menor custo possível.",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "SC-07",
+   "vida": "LV-02",
+   "modo": "",
+   "stake": "SH-01",
+   "titulo": "Transporte",
+   "descr": "O robô é transportado desligado pela chave geral, com o capacitor de chute descarregado pelo circuito de descarga.",
+   "fonte": "FT-08"
+  },
+  {
+   "id": "SC-08",
+   "vida": "LV-03",
+   "modo": "MD-04",
+   "stake": "SH-01",
+   "titulo": "Preparação para o jogo",
+   "descr": "A equipe liga o robô, confere pelos LEDs de estado a bateria e o recebimento de pacotes de rádio e aguarda o comando do árbitro.",
+   "fonte": "FT-08"
+  },
+  {
+   "id": "SC-09",
+   "vida": "LV-05",
+   "modo": "",
+   "stake": "SH-01",
+   "titulo": "Manutenção entre partidas",
+   "descr": "A equipe descarrega o capacitor de chute pelo circuito de descarga antes de abrir o robô e troca a bateria.",
+   "fonte": "FT-08"
+  },
+  {
+   "id": "SC-10",
+   "vida": "LV-06",
+   "modo": "",
+   "stake": "SH-02",
+   "titulo": "Armazenamento",
+   "descr": "O robô é guardado desligado pela chave geral, com o capacitor de chute descarregado.",
+   "fonte": "FT-08"
+  }
+ ],
+ "dic": [
+  "adequado",
+  "adequada",
+  "apropriado",
+  "suficiente",
+  "rápido",
+  "rápida",
+  "rapidamente",
+  "fácil",
+  "facilmente",
+  "simples",
+  "robusto",
+  "robusta",
+  "flexível",
+  "eficiente",
+  "otimizado",
+  "melhor",
+  "ótimo",
+  "excelente",
+  "confiável",
+  "amigável",
+  "possível",
+  "quando necessário",
+  "se necessário",
+  "geralmente",
+  "normalmente",
+  "usualmente",
+  "tipicamente",
+  "aproximadamente",
+  "alguns",
+  "vários",
+  "etc",
+  "e/ou"
+ ],
+ "reqs": [
+  {
+   "id": "REQ-001",
+   "nivel": "Stakeholder",
+   "tipo": "Desempenho",
+   "texto": "O robô deve operar durante um jogo longo de 63,85 min sem troca de bateria.",
+   "pai": "",
+   "fonte": "FT-03",
+   "cen": "SC-01",
+   "metodo": "A",
+   "criterio": "t_op ≥ 63,85 min, calculado no módulo 9 para o f adotado"
+  },
+  {
+   "id": "REQ-002",
+   "nivel": "Stakeholder",
+   "tipo": "Restrição",
+   "texto": "O robô deve cumprir as regras da SSL.",
+   "pai": "",
+   "fonte": "FT-03",
+   "cen": "SC-04",
+   "metodo": "I",
+   "criterio": "Conformidade com as seções 5.1.1 e 5.1.2 das regras da SSL 2025"
+  },
+  {
+   "id": "REQ-003",
+   "nivel": "Stakeholder",
+   "tipo": "Funcional",
+   "texto": "O robô deve chutar a bola.",
+   "pai": "",
+   "fonte": "FT-08",
+   "cen": "SC-01",
+   "metodo": "D",
+   "criterio": "Chute executado em bancada"
+  },
+  {
+   "id": "REQ-004",
+   "nivel": "Stakeholder",
+   "tipo": "Restrição",
+   "texto": "O hardware deve usar componentes vendidos no Brasil.",
+   "pai": "",
+   "fonte": "FT-01",
+   "cen": "SC-06",
+   "metodo": "I",
+   "criterio": "Todo item da BOM com fornecedor no Brasil"
+  },
+  {
+   "id": "REQ-005",
+   "nivel": "Stakeholder",
+   "tipo": "Restrição",
+   "texto": "Cada componente do hardware deve ter o preço comparado com pelo menos uma alternativa vendida no Brasil.",
+   "pai": "",
+   "fonte": "FT-01",
+   "cen": "SC-06",
+   "metodo": "I",
+   "criterio": "Registro de comparação de preço para cada item da lista de materiais"
+  },
+  {
+   "id": "REQ-006",
+   "nivel": "Sistema",
+   "tipo": "Elétrico",
+   "texto": "A potência média drenada da bateria deve ser menor ou igual a 54,24·f W, com C = 5,2 Ah, V_nom = 11,1 V e t_req = 63,85 min.",
+   "pai": "REQ-001",
+   "fonte": "FT-01",
+   "cen": "SC-05",
+   "metodo": "A",
+   "criterio": "P_med ≤ 54,24·f W"
+  },
+  {
+   "id": "REQ-007",
+   "nivel": "Sistema",
+   "tipo": "Funcional",
+   "texto": "O robô deve interromper o movimento dos motores em até 2 s após o comando HALT.",
+   "pai": "REQ-002",
+   "fonte": "FT-03",
+   "cen": "SC-03",
+   "metodo": "T",
+   "criterio": "Tempo de parada ≤ 2 s"
+  },
+  {
+   "id": "REQ-008",
+   "nivel": "Sistema",
+   "tipo": "Funcional",
+   "texto": "O robô deve limitar sua velocidade a 1,5 m/s durante o Stop.",
+   "pai": "REQ-002",
+   "fonte": "FT-03",
+   "cen": "SC-04",
+   "metodo": "T",
+   "criterio": "Velocidade ≤ 1,5 m/s"
+  },
+  {
+   "id": "REQ-009",
+   "nivel": "Sistema",
+   "tipo": "Funcional",
+   "texto": "O robô deve identificar bateria baixa quando a tensão for inferior a 9 V.",
+   "pai": "REQ-001",
+   "fonte": "FT-08",
+   "cen": "SC-08",
+   "metodo": "T",
+   "criterio": "Detecção com tensão < 9 V"
+  },
+  {
+   "id": "REQ-010",
+   "nivel": "Sistema",
+   "tipo": "Elétrico",
+   "texto": "O MOSFET de chute deve suportar corrente de dreno superior a 20 A.",
+   "pai": "REQ-003",
+   "fonte": "FT-08",
+   "cen": "SC-01",
+   "metodo": "A",
+   "criterio": "Id > 20 A, o que exige R do solenoide ≥ 9,0 Ω a 180 V"
+  },
+  {
+   "id": "REQ-011",
+   "nivel": "Stakeholder",
+   "tipo": "Segurança",
+   "texto": "O robô deve ser aberto para manutenção com o capacitor de chute descarregado.",
+   "pai": "",
+   "fonte": "FT-08",
+   "cen": "SC-09",
+   "metodo": "D",
+   "criterio": "Abertura do robô feita depois da descarga do capacitor",
+   "elem": ""
+  },
+  {
+   "id": "REQ-012",
+   "nivel": "Sistema",
+   "tipo": "Segurança",
+   "texto": "A KickBoard deve descarregar o capacitor de chute por circuito acionado manualmente, sem comando do microcontrolador.",
+   "pai": "REQ-011",
+   "fonte": "FT-09",
+   "cen": "SC-07",
+   "metodo": "D",
+   "criterio": "Descarga do capacitor com a placa sem sinal de PWM",
+   "elem": ""
+  },
+  {
+   "id": "REQ-013",
+   "nivel": "Sistema",
+   "tipo": "Segurança",
+   "texto": "A energia armazenada no capacitor de chute deve ser menor ou igual ao limite de energia adotado para manuseio.",
+   "pai": "REQ-011",
+   "fonte": "FT-08",
+   "cen": "SC-10",
+   "metodo": "A",
+   "criterio": "0,5 C V² ≤ E_lim (E_lim sem fonte: lacuna)",
+   "elem": ""
+  },
+  {
+   "id": "REQ-014",
+   "nivel": "Sistema",
+   "tipo": "Elétrico",
+   "texto": "A corrente de pico drenada da bateria deve ser menor que a corrente máxima de descarga declarada da bateria.",
+   "pai": "REQ-001",
+   "fonte": "FT-08",
+   "cen": "SC-01",
+   "metodo": "A",
+   "criterio": "I_pico < 5,2 Ah × 50C = 260 A",
+   "elem": ""
+  },
+  {
+   "id": "REQ-015",
+   "nivel": "Sistema",
+   "tipo": "Elétrico",
+   "texto": "A tensão nos terminais da bateria sob a corrente de pico deve ser maior ou igual a 9 V.",
+   "pai": "REQ-001",
+   "fonte": "FT-08",
+   "cen": "SC-01",
+   "metodo": "A",
+   "criterio": "V_nom − I_pico·R_int ≥ 9 V",
+   "elem": ""
+  },
+  {
+   "id": "REQ-016",
+   "nivel": "Stakeholder",
+   "tipo": "Funcional",
+   "texto": "O robô deve executar os comandos de movimento e de chute enviados pela base.",
+   "pai": "",
+   "fonte": "FT-01",
+   "cen": "SC-02",
+   "metodo": "D",
+   "criterio": "Movimento e chute comandados pela base em partida de teste",
+   "elem": ""
+  },
+  {
+   "id": "REQ-017",
+   "nivel": "Sistema",
+   "tipo": "Funcional",
+   "texto": "O robô deve receber os comandos da base pelo rádio nRF24L01+ durante todo o tempo em que a bateria estiver ligada.",
+   "pai": "REQ-016",
+   "fonte": "FT-01",
+   "cen": "SC-05",
+   "metodo": "D",
+   "criterio": "Recepção de pacotes indicada pelo LED de rádio em todos os modos",
+   "elem": ""
+  }
+ ],
+ "funcs": [
+  {
+   "id": "FN-01",
+   "nome": "Armazenar e fornecer energia",
+   "descr": "Alimentar o robô durante todo o t_req.",
+   "reqs": [
+    "REQ-001",
+    "REQ-006"
+   ]
+  },
+  {
+   "id": "FN-02",
+   "nome": "Monitorar a tensão da bateria",
+   "descr": "Medir a bateria e sinalizar o limiar de 9 V.",
+   "reqs": [
+    "REQ-009"
+   ]
+  },
+  {
+   "id": "FN-03",
+   "nome": "Parar e limitar o movimento",
+   "descr": "Frear em Halt e limitar a velocidade em Stop.",
+   "reqs": [
+    "REQ-007",
+    "REQ-008"
+   ]
+  },
+  {
+   "id": "FN-04",
+   "nome": "Chutar a bola",
+   "descr": "Carregar o capacitor e descarregar no solenoide.",
+   "reqs": [
+    "REQ-003",
+    "REQ-010"
+   ]
+  },
+  {
+   "id": "FN-05",
+   "nome": "Comunicar com a base",
+   "descr": "Receber comandos do árbitro e da estratégia.",
+   "reqs": [
+    "REQ-016",
+    "REQ-017"
+   ]
+  },
+  {
+   "id": "FN-06",
+   "nome": "Descarregar o capacitor de chute",
+   "reqs": [
+    "REQ-012"
+   ]
+  }
+ ],
+ "elems": [
+  {
+   "id": "EL-01",
+   "nome": "MainBoard",
+   "tipo": "Placa",
+   "descr": "Comunicação e controle de motores integrados em uma placa; três pontes H L298N; reguladores L7810 e L7805."
+  },
+  {
+   "id": "EL-02",
+   "nome": "KickBoard",
+   "tipo": "Placa",
+   "descr": "Boost de malha aberta para o capacitor de chute; conectores J2 e J3."
+  },
+  {
+   "id": "EL-03",
+   "nome": "Bateria LiPo 3S",
+   "tipo": "Energia",
+   "descr": "Leão, 11,1 V, 5200 mAh. Sem datasheet."
+  },
+  {
+   "id": "EL-04",
+   "nome": "Motores (3 × 102-S)",
+   "tipo": "Atuador",
+   "descr": "Microred, Microredutor A 12 Vdc."
+  },
+  {
+   "id": "EL-05",
+   "nome": "Solenoide de chute",
+   "tipo": "Atuador",
+   "descr": "Soletec, Série B."
+  },
+  {
+   "id": "EL-06",
+   "nome": "Capacitor de chute",
+   "tipo": "Energia",
+   "descr": "2200 µF, 200 V (planejado)."
+  },
+  {
+   "id": "EL-07",
+   "nome": "Rádio nRF24L01",
+   "tipo": "Comunicação",
+   "descr": "Fica ligado e escutando enquanto a bateria está ligada."
+  }
+ ],
+ "aloc": {
+  "FN-01|EL-03": true,
+  "FN-02|EL-01": true,
+  "FN-03|EL-01": true,
+  "FN-03|EL-04": true,
+  "FN-04|EL-02": true,
+  "FN-04|EL-05": true,
+  "FN-04|EL-06": true,
+  "FN-05|EL-07": true,
+  "FN-05|EL-01": true,
+  "FN-06|EL-02": true
+ },
+ "ifs": [
+  {
+   "id": "IF-01",
+   "de": "EL-03",
+   "para": "EL-01",
+   "tipo": "Potência",
+   "descr": "Alimentação da placa. A tensão da bateria também vai ao ADC por um divisor de 100 kΩ e 22 kΩ.",
+   "sinais": "11,1 V nominal",
+   "fonte": "FT-10"
+  },
+  {
+   "id": "IF-02",
+   "de": "EL-01",
+   "para": "EL-04",
+   "tipo": "Potência",
+   "descr": "Três pontes H L298N acionam os motores em malha aberta.",
+   "sinais": "PWM; 0,7 A nominal e 2,8 A bloqueado por motor",
+   "fonte": "FT-10"
+  },
+  {
+   "id": "IF-03",
+   "de": "EL-06",
+   "para": "EL-02",
+   "tipo": "Potência",
+   "descr": "O capacitor principal entra pelo conector J2 da KickBoard.",
+   "sinais": "até 180 V (projeto)",
+   "fonte": "FT-09"
+  },
+  {
+   "id": "IF-04",
+   "de": "EL-02",
+   "para": "EL-05",
+   "tipo": "Potência",
+   "descr": "Pulso de chute pelo conector J3, com diodo de roda livre D2 (1N5406).",
+   "sinais": "180 V; I de pico = V/R",
+   "fonte": "FT-09"
+  },
+  {
+   "id": "IF-05",
+   "de": "EL-03",
+   "para": "EL-02",
+   "tipo": "Potência",
+   "descr": "Alimentação do boost de carga do capacitor.",
+   "sinais": "11,1 V nominal",
+   "fonte": "FT-09"
+  },
+  {
+   "id": "IF-06",
+   "de": "EL-07",
+   "para": "EL-01",
+   "tipo": "Sinal",
+   "descr": "Rádio ligado ao RP2040 por SPI.",
+   "sinais": "SPI",
+   "fonte": "FT-01"
+  },
+  {
+   "id": "IF-07",
+   "de": "EL-01",
+   "para": "EL-02",
+   "tipo": "Sinal",
+   "descr": "Interface entre placas por Micro-Fit 2x3: +3,3 V, GND, PWM de carga e de chute; tensão do capacitor no sentido inverso.",
+   "sinais": "5 sinais e GND",
+   "fonte": "FT-01"
+  }
+ ],
+ "decs": [
+  {
+   "id": "DEC-01",
+   "titulo": "Integrar comunicação e controle de motores em uma placa (Time B) ou manter placas separadas (Time A)?",
+   "ilustrativo": false,
+   "crit": [
+    {
+     "n": "Custo",
+     "w": ""
+    },
+    {
+     "n": "Espaço",
+     "w": ""
+    },
+    {
+     "n": "Testabilidade",
+     "w": ""
+    }
+   ],
+   "alts": [
+    {
+     "n": "Placa integrada (Time B 2025)",
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    },
+    {
+     "n": "Placas separadas (Time A)",
+     "s": [
+      "",
+      "",
+      ""
+     ]
+    }
+   ],
+   "escolha": "Placa integrada (Time B 2025)",
+   "justif": "Placas separadas dão modularidade, mas aumentam custo e espaço; por isso foram integradas (FT-01).",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-02",
+   "titulo": "KickBoard com ou sem microcontrolador próprio?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Sem microcontrolador",
+     "s": []
+    },
+    {
+     "n": "Com microcontrolador (Time A)",
+     "s": []
+    }
+   ],
+   "escolha": "Sem microcontrolador",
+   "justif": "Sem microcontrolador a placa fica mais simples, barata e pequena; os PWMs vêm da MainBoard.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-03",
+   "titulo": "MOSFET do conversor elevador?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "IRFS4127",
+     "s": []
+    },
+    {
+     "n": "IRFP90N20D (Time A)",
+     "s": []
+    }
+   ],
+   "escolha": "IRFS4127",
+   "justif": "IRFS4127 é SMD e mais barato.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-04",
+   "titulo": "Indutor do conversor elevador?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Indutor toroidal PTH de 100 µH",
+     "s": []
+    },
+    {
+     "n": "Indutor feito à mão",
+     "s": []
+    }
+   ],
+   "escolha": "Indutor toroidal PTH de 100 µH",
+   "justif": "Melhor precisão de indutância e menor resistência série.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-05",
+   "titulo": "Isolamento dos sinais da KickBoard?",
+   "ilustrativo": false,
+   "crit": [],
+   "alts": [
+    {
+     "n": "Isolador digital ADuM1201",
+     "s": []
+    },
+    {
+     "n": "Optoacoplador",
+     "s": []
+    }
+   ],
+   "escolha": "Isolador digital ADuM1201",
+   "justif": "Comunicação rápida, baixo consumo e isolamento superior ao do optoacoplador.",
+   "fonte": "FT-01",
+   "reqs": []
+  },
+  {
+   "id": "DEC-06",
+   "titulo": "Regulador de 5 V: dois lineares em série ou fonte chaveada?",
+   "ilustrativo": false,
+   "crit": [],
+   "reqs": [
+    "REQ-006"
+   ],
+   "alts": [
+    {
+     "n": "Lineares L7810 e L7805 em série",
+     "s": []
+    },
+    {
+     "n": "Fonte chaveada",
+     "s": []
+    }
+   ],
+   "escolha": "Lineares L7810 e L7805 em série",
+   "justif": "Escolha de 2025 pelo menor custo (RS-02). O orçamento de energia mostra que a cadeia tira 4,77 W da bateria para entregar 2,15 W às cargas de 5 V e 3,3 V (eficiência de 0,45).",
+   "fonte": "FT-10"
+  }
+ ],
+ "en": {
+  "jogo": "longo",
+  "fases": [
+   {
+    "k": "RUN",
+    "nome": "Running (tempo de jogo)",
+    "medio": "10",
+    "longo": "15",
+    "nat": "regra"
+   },
+   {
+    "k": "HALT",
+    "nome": "Halt",
+    "medio": "10.38",
+    "longo": "15.56",
+    "nat": "painel"
+   },
+   {
+    "k": "STOP",
+    "nome": "Stop",
+    "medio": "8.69",
+    "longo": "13.04",
+    "nat": "painel"
+   },
+   {
+    "k": "BREAK",
+    "nome": "Intervalo",
+    "medio": "5",
+    "longo": "12",
+    "nat": "regra"
+   },
+   {
+    "k": "TIMEOUT",
+    "nome": "Timeout",
+    "medio": "4.07",
+    "longo": "6.11",
+    "nat": "painel"
+   },
+   {
+    "k": "OUT",
+    "nome": "Outros",
+    "medio": "1.43",
+    "longo": "2.14",
+    "nat": "painel"
+   }
+  ],
+  "bat": {
+   "C": "5.2",
+   "Cor": "dado",
+   "V": "11.1",
+   "Vor": "dado",
+   "f": "0.6",
+   "for": "premissa",
+   "Rint": "",
+   "Ror": "pendente",
+   "taxaC": "50",
+   "Tor": "dado",
+   "Vmin": "9",
+   "Mor": "dado"
+  },
+  "cargas": [
+   {
+    "id": "LD-01",
+    "nome": "Motores (3 × 102-S)",
+    "V": "12",
+    "I": "2.1",
+    "eta": "0.838",
+    "origem": "dado",
+    "dmode": "fases",
+    "D": "",
+    "cen": true,
+    "fases": {
+     "RUN": true,
+     "STOP": true,
+     "OUT": true
+    },
+    "obs": "8,4 W por motor (catálogo, FT-05); η da queda típica do L298 a 1 A (FT-12). Cenário central."
+   },
+   {
+    "id": "LD-02",
+    "nome": "Cargas de 5 V e 3,3 V pela cadeia linear (inclui rádio e Pico)",
+    "V": "5",
+    "I": "0.4294",
+    "eta": "0.45",
+    "origem": "dado",
+    "dmode": "fases",
+    "D": "",
+    "cen": false,
+    "fases": {
+     "RUN": true,
+     "HALT": true,
+     "STOP": true,
+     "BREAK": true,
+     "TIMEOUT": true,
+     "OUT": true
+    },
+    "obs": "Limite superior pelos datasheets (FT-12 a FT-16); η = 5/11,1 da cadeia linear (FT-10)."
+   },
+   {
+    "id": "LD-03",
+    "nome": "Cargas ligadas direto à bateria (L298 em repouso, LEDs, quiescentes)",
+    "V": "11.1",
+    "I": "0.2492",
+    "eta": "1",
+    "origem": "dado",
+    "dmode": "fases",
+    "D": "",
+    "cen": false,
+    "fases": {
+     "RUN": true,
+     "HALT": true,
+     "STOP": true,
+     "BREAK": true,
+     "TIMEOUT": true,
+     "OUT": true
+    },
+    "obs": "Limite superior; quiescente do L7810 por premissa."
+   },
+   {
+    "id": "LD-04",
+    "nome": "Conversor elevador do chute",
+    "V": "",
+    "I": "",
+    "eta": "",
+    "origem": "pendente",
+    "dmode": "fases",
+    "D": "",
+    "cen": false,
+    "fases": {
+     "RUN": true,
+     "HALT": true,
+     "STOP": true,
+     "BREAK": true,
+     "TIMEOUT": true,
+     "OUT": true
+    },
+    "obs": "Sem registro do número de chutes por partida. Tratado pelo número de cargas que zera a margem (capítulo 4)."
+   }
+  ],
+  "pico": [
+   {
+    "id": "PK-01",
+    "nome": "Motores em rotor bloqueado (3 × 2,8 A)",
+    "I": "8.4",
+    "origem": "dado"
+   },
+   {
+    "id": "PK-02",
+    "nome": "Entrada do conversor elevador (corrente nominal do indutor)",
+    "I": "3",
+    "origem": "premissa"
+   },
+   {
+    "id": "PK-03",
+    "nome": "Eletrônica (limite superior, inclui rádio)",
+    "I": "0.6786",
+    "origem": "dado"
+   }
+  ],
+  "cap": {
+   "C": "2200",
+   "Cor": "dado",
+   "Vp": "180",
+   "Vs": "186.6",
+   "Vl": "200",
+   "Id": "20",
+   "Elim": ""
+  },
+  "massa": {
+   "lim": "",
+   "itens": []
+  },
+  "custo": {
+   "lim": "",
+   "itens": []
+  }
+ },
+ "voltas": [],
+ "vcrm": {},
+ "revs": {},
+ "libs": [],
+ "licoes": [],
+ "snapshot": null
+}

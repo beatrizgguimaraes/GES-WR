@@ -1,0 +1,9 @@
+# Mantém os bytes dos arquivos idênticos em qualquer sistema,
+# para que os valores de SHA-256 não mudem.
+*.html -text
+*.json -text
+*.py -text
+*.md -text
+*.txt -text
+*.xlsx binary
+*.zip binary
